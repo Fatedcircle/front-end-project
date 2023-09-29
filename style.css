@@ -1,0 +1,10 @@
+body {
+    background-color: aqua;
+}
+.navbar-nav {
+    margin: 0 auto;
+}
+.bi.bi-cart {
+    position: relative;
+    align-self: center;
+}

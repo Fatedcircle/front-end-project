@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games webshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="container mt-5">
+            <h1>Nieuw product toevoegen</h1>
+    
+            <!-- Toevoegen van een formulier om een nieuw product toe te voegen -->
+            <form id="addProductForm">
+                <div class="mb-3">
+                    <label for="naam" class="form-label">Productnaam</label>
+                    <input type="text" class="form-control" id="naam" name="naam" required>
+                </div>
+                <div class="mb-3">
+                    <label for="beschrijving" class="form-label">Productbeschrijving</label>
+                    <textarea class="form-control" id="beschrijving" name="beschrijving" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="prijs" class="form-label">Productprijs</label>
+                    <input type="number" class="form-control" id="prijs" name="prijs" step="0.01" required>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Afbeeldings-URL</label>
+                    <input type="url" class="form-control" id="image" name="image" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Product toevoegen</button>
+            </form>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="addproduct.js"></script>
+</body>
+
+</html>

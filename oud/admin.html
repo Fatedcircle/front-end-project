@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <!-- Voeg Bootstrap CSS toe -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div class="container mt-5">
+            <h1>Admin Page</h1>
+    <!-- Voeg deze knop toe aan je admin.html-bestand binnen de <div class="container mt-5"> -->
+        <!-- In de hoofdpagina (index.html) -->
+<a href="add_product.html">Product Toevoegen</a>
+
+
+<button class="btn btn-primary" id="loadProductsButton">Producten Laden</button>
+
+            <!-- Hier wordt de tabel voor productweergave ingevoegd -->
+            <!-- TODO moet nog een extra tabel komen voor de bestellingen, gebruik bootstrap tabs voor de juiste tabel -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Naam</th>
+                        <th>Beschrijving</th>
+                        <th>Prijs</th>
+                        <th class="afbeelding">Afbeelding url</th>
+                        <th>Voorraad</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Hier worden de producten dynamisch ingevoegd -->
+                </tbody>
+            </table>
+        </div>
+
+    <!-- <script src="admin.js"></script> -->
+    <script src="laadbasisproducten.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

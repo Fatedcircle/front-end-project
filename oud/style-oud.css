@@ -1,0 +1,13 @@
+/* body { background-color: green; height: 100vh;}
+header .navbar{ background-color: red;}
+.main-content .col-2 { background-color: orange;}
+.main-content .col-8 { background-color: aquamarine;}
+
+footer .col-3:nth-child(1) { background-color: lightcoral;}
+footer .col-3:nth-child(2) { background-color: darkgoldenrod;}
+footer .col-3:nth-child(3) { background-color: yellow;}
+footer .col-3:nth-child(4) { background-color: yellowgreen;} */
+/* TODO verzin een goede styling en plaats het!! */
+.dark-mode { background-color: black; color: white;}
+h1 { font-size: 30px;}
+/* FIXME weet het even niet meer. */
